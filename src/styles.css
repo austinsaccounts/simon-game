@@ -1,3 +1,19 @@
 body {
   background-color: #7FDBFF;
 }
+
+#blueButton {
+  background-color: blue;
+}
+
+#greenButton {
+  background-color: green;
+}
+
+#yellowButton {
+  background-color: yellow;
+}
+
+#redButton {
+  background-color: red;
+}
