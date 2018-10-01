@@ -6,9 +6,5 @@ import './styles.css';
 
 
 $(document).ready(function() {
-  // var sequence = [];
-  $('#blueButton').click(function(event) {
-    event.preventDefault();
-    // simon(sequence);
+console.log("hello");
   });
-});
