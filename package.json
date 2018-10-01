@@ -1,0 +1,23 @@
+{
+  "name": "simon",
+  "version": "1.0.0",
+  "description": "the game of simon",
+  "main": "index.js",
+  "scripts": {
+    "test": "this is a test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austinsaccounts/simon-game.git"
+  },
+  "author": "austin chris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/austinsaccounts/simon-game/issues"
+  },
+  "homepage": "https://github.com/austinsaccounts/simon-game#readme",
+  "devDependencies": {
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.9"
+  }
+}
