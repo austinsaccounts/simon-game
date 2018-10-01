@@ -1,19 +1,46 @@
 body {
   background-color: #7FDBFF;
 }
+.buttons {opacity:.3}
 
 #blueButton {
   background-color: blue;
+  transition-property: all;
+  opacity: .1;
 }
 
 #greenButton {
   background-color: green;
+  transition-property: all;
+  opacity: .1;
 }
 
 #yellowButton {
   background-color: yellow;
+  transition-property: all;
+  opacity: .1;
 }
 
 #redButton {
+  background-color: white;
+  opacity: .1;
+}
+
+
+
+.flash {
+  opacity: .9;
+}
+
+.red{
   background-color: red;
+}
+.blue{
+  background-color: blue;
+}
+.yellow{
+  background-color: yellow;
+}
+.green{
+  background-color: green;
 }

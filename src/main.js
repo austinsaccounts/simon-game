@@ -1,6 +1,6 @@
 
-import './simon.js';
 import './styles.css';
+import './simon.js';
 // import $ from 'jquery';
 
 
