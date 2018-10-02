@@ -6,5 +6,5 @@ import './simon.js';
 
 
 $(document).ready(function() {
-console.log("hello");
+  console.log("itsalive");
   });

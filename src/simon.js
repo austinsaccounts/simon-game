@@ -1,73 +1,28 @@
+
 var sequence=[];
+var colors = ["blue", "green", "yellow", "red"];
+
 function randint(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
-function simon(arr) {
-  var colors = ["blue", "green", "yellow", "red"];
-  arr.push(colors[randint( 0,3 )]);
-}
-
-function flashing() {
-  var i = 0;
-function flasher(num){
-    if(i < sequence.length){
-      setTimeout(function(){$('.' + sequence[i]).addClass("flash");
-      setTimeout(function(){$('.' + sequence[i]).removeClass("flash") ; i++}, 500);
-      flasher()}, 1000);}
-    }
-    flasher();
-  }
-// }
-
+function simon(z) {
+  sequence.push(colors[randint( 0,3 )]);
+  z++;
+  var newbie = sequence[z]
+  return newbie;
+};
 
   $(document).ready(function() {
-    simon(sequence);
-    console.log(sequence);
-    flashing();
-    var j = 0;
+    console.log("hello");
+  });
+
+      $('#start').click(function() {
+        var jesuss = simon(0);
+        alert(jesuss);
+      });
+
     $('.buttons').click(function() {
       var colorInput = $(this).attr('stuff');
       colorInput = colorInput.toString();
-      comparison(colorInput);
-      j++
-      console.log(sequence);
-      flashing();
     });
-  });
-  //above shows we can get comparison value
-
-
-  // the edits are currently greyed out because wewanna simplify the script calling
-  function comparison(peets) {
-    var sequencechecker = sequencechecker.slice(0, j)
-    var k = 0;
-    var i = -1;
-  function hunter() {
-    i++;
-    if(sequencechecker[i] !== sequence[i] && i <= sequencechecker.length) {
-      hunter();
-    }
-    if(i == sequencechecker.length+1) {
-
-    } else{
-      sequence.length = 0;
-      simon(sequence)
-      console.log("no dice");
-      k = 0;
-      j=0;
-    }
-  } hunter();
-}
-    if (sequence[k] == peets) {
-      console.log('match'+sequence);
-      k++;
-    } 
-    else {
-      sequence.length = 0;
-      simon(sequence)
-      console.log("no dice");
-      k = 0;
-      j=0;
-    }
-  }
